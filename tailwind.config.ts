@@ -60,6 +60,7 @@ export default {
 					bad: 'hsl(var(--chat-bad))',
 					good: 'hsl(var(--chat-good))'
 				},
+				'accent-secondary': 'hsl(var(--accent-secondary))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

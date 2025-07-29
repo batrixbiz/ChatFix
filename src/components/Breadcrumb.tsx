@@ -21,9 +21,9 @@ const Breadcrumb = () => {
   };
 
   return (
-    <div className="bg-card border-b border-border sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-        <span className="text-sm text-muted-foreground font-mono">
+    <div className="bg-background/95 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-6 py-4">
+        <span className="text-sm text-muted-foreground font-mono tracking-wide">
           {getBreadcrumb()}
         </span>
       </div>

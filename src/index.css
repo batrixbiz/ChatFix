@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 222 15% 8%;
-    --foreground: 210 20% 90%;
+    --background: 210 35% 7%;  /* #0b1220 */
+    --foreground: 218 27% 92%; /* #e6eaf2 */
 
-    --card: 222 20% 12%;
-    --card-foreground: 210 20% 90%;
+    --card: 214 30% 9%;        /* #0e1628 */
+    --card-foreground: 218 27% 92%;
 
-    --popover: 222 20% 12%;
-    --popover-foreground: 210 20% 90%;
+    --popover: 214 30% 9%;
+    --popover-foreground: 218 27% 92%;
 
-    --primary: 210 75% 65%;
-    --primary-foreground: 222 15% 8%;
+    --primary: 212 100% 66%;   /* #5aa0ff */
+    --primary-foreground: 210 35% 7%;
 
-    --secondary: 222 25% 15%;
-    --secondary-foreground: 210 20% 90%;
+    --secondary: 214 30% 11%;
+    --secondary-foreground: 218 27% 92%;
 
-    --muted: 222 25% 15%;
-    --muted-foreground: 210 15% 65%;
+    --muted: 214 30% 11%;
+    --muted-foreground: 217 21% 69%; /* #9aa6c1 */
 
-    --accent: 210 60% 55%;
-    --accent-foreground: 222 15% 8%;
+    --accent: 212 100% 66%;    /* #5aa0ff */
+    --accent-foreground: 210 35% 7%;
 
-    --destructive: 0 75% 60%;
-    --destructive-foreground: 210 20% 90%;
+    --accent-secondary: 272 67% 76%; /* #b692f6 */
 
-    --border: 222 25% 20%;
-    --input: 222 25% 20%;
-    --ring: 210 75% 65%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 218 27% 92%;
 
-    --warm-bg: 222 20% 12%;
-    --warm-accent: 210 60% 55%;
-    --chat-bad: 0 45% 20%;
-    --chat-good: 120 35% 20%;
+    --border: 214 30% 15%;
+    --input: 214 30% 15%;
+    --ring: 212 100% 66%;
 
-    --radius: 0.75rem;
+    --chat-bad: 0 50% 25%;
+    --chat-good: 120 40% 25%;
+
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -105,6 +105,42 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: 2.125rem; /* 34px */
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  h2 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+
+  h3 {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .text-sm {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3rem; /* 48px on desktop */
+    }
+    
+    h2 {
+      font-size: 1.875rem; /* 30px on desktop */
+    }
   }
 }
