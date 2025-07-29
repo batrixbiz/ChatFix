@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
+import Breadcrumb from "@/components/Breadcrumb";
 import Footer from "@/components/Footer";
 import ChatExample from "@/components/ChatExample";
 
 const NoHello = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Breadcrumb />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">

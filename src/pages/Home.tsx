@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Navbar from "@/components/Navbar";
+import Breadcrumb from "@/components/Breadcrumb";
 import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Breadcrumb />
       
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Hero Section */}
@@ -16,15 +16,15 @@ const Home = () => {
             Fix your chat. Say what matters.
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            ChatFix helps anyone — not just developers — communicate better online. 
-            Whether you're asking for help, chatting in support, or just messaging friends, 
+            ChatFix helps anyone communicate better online. 
+            Whether you're asking for help or just messaging friends, 
             we teach you how to ask the right way.
           </p>
         </div>
 
         {/* Three Concepts Grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          <Card className="bg-warm-bg border-border hover:shadow-lg transition-shadow">
+          <Card className="bg-card border-border hover:bg-card/80 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-primary">No Hello</CardTitle>
               <CardDescription className="text-lg">
@@ -42,7 +42,7 @@ const Home = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-warm-bg border-border hover:shadow-lg transition-shadow">
+          <Card className="bg-card border-border hover:bg-card/80 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-primary">XY Problem</CardTitle>
               <CardDescription className="text-lg">
@@ -60,7 +60,7 @@ const Home = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-warm-bg border-border hover:shadow-lg transition-shadow">
+          <Card className="bg-card border-border hover:bg-card/80 transition-colors">
             <CardHeader>
               <CardTitle className="text-2xl text-primary">Just Ask</CardTitle>
               <CardDescription className="text-lg">
