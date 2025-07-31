@@ -4,10 +4,10 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="text-center space-y-3">
           <p className="text-muted-foreground leading-relaxed">
-            Built for everyone — not just coders.
+            Say the right thing, the right way.
           </p>
           <p className="text-muted-foreground/60 text-sm font-mono tracking-wide">
-            ChatFix © 2025
+            ChatFix by Batrix © 2025
           </p>
         </div>
       </div>
