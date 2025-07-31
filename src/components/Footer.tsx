@@ -1,13 +1,15 @@
 const Footer = () => {
   return (
-    <footer className="bg-background border-t border-border/50 py-16 mt-20">
-      <div className="max-w-6xl mx-auto px-6 text-center">
-        <p className="text-muted-foreground mb-2">
-          Built for everyone — not just coders.
-        </p>
-        <p className="text-muted-foreground text-sm">
-          ChatFix © 2025
-        </p>
+    <footer className="bg-gradient-to-t from-card/80 to-transparent border-t border-border/30 mt-32">
+      <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="text-center space-y-3">
+          <p className="text-muted-foreground leading-relaxed">
+            Built for everyone — not just coders.
+          </p>
+          <p className="text-muted-foreground/60 text-sm font-mono tracking-wide">
+            ChatFix © 2025
+          </p>
+        </div>
       </div>
     </footer>
   );

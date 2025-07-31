@@ -52,15 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				warm: {
-					bg: 'hsl(var(--warm-bg))',
-					accent: 'hsl(var(--warm-accent))'
-				},
 				chat: {
 					bad: 'hsl(var(--chat-bad))',
 					good: 'hsl(var(--chat-good))'
 				},
 				'accent-secondary': 'hsl(var(--accent-secondary))',
+				'accent-warm': 'hsl(var(--accent-warm))',
+				'primary-glow': 'hsl(var(--primary-glow))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
