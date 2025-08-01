@@ -26,7 +26,7 @@ const JustAsk = () => {
               { message: "BRO JUST TELL ME WHAT YOU NEED HELP WITH", username: "helper", timestamp: "3:22 PM", avatarIndex: 1 }
             ]}
             goodExample={[
-              { message: "I'm struggling to organize a big list of tasks into categories. Any tips or tools you recommend?", username: "clear_user", timestamp: "3:15 PM", avatarIndex: 2 },
+              { message: "I'm struggling to organize a big list of tasks into categories. Any tips or tools you recommend?", username: "clear_user", timestamp: "3:15 PM", avatarIndex: 0 },
               { message: "You could try using a board view in Trello or Notion — it's great for that use case.", username: "helper", timestamp: "3:16 PM", avatarIndex: 1 }
             ]}
           />
