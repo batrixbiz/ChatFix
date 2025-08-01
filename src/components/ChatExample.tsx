@@ -1,8 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
+interface ChatMessage {
+  message: string;
+  username: string;
+  timestamp: string;
+  avatarIndex: number;
+}
+
 interface ChatExampleProps {
-  badExample: string;
-  goodExample: string;
+  badExample: ChatMessage[];
+  goodExample: ChatMessage[];
 }
 
 const profilePics = [
@@ -12,43 +19,29 @@ const profilePics = [
   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face"
 ];
 
-const ChatMessage = ({ message, isGood = false, username, timestamp, avatarIndex = 0 }: { 
-  message: string; 
-  isGood?: boolean;
-  username: string;
-  timestamp: string;
-  avatarIndex?: number;
-}) => {
+const ChatMessageBubble = ({ message, username, timestamp, avatarIndex }: ChatMessage) => {
   return (
-    <div className="flex items-start gap-4 p-6 hover:bg-card/50 transition-all duration-200 group">
-      <Avatar className="w-12 h-12 border-2 border-border/50 group-hover:border-primary/20 transition-all duration-200">
+    <div className="flex items-start gap-4 p-4 hover:bg-card/30 transition-all duration-200 group">
+      <Avatar className="w-10 h-10 border-2 border-border/50 group-hover:border-primary/20 transition-all duration-200">
         <AvatarImage 
           src={profilePics[avatarIndex % profilePics.length]} 
           alt={username}
           className="object-cover"
         />
-        <AvatarFallback className={`text-sm font-semibold ${
-          isGood 
-            ? 'bg-gradient-to-br from-emerald-500 to-emerald-600 text-white' 
-            : 'bg-gradient-to-br from-red-500 to-red-600 text-white'
-        }`}>
+        <AvatarFallback className="text-sm font-semibold bg-gradient-to-br from-muted to-muted-foreground/20 text-foreground">
           {username.charAt(0).toUpperCase()}
         </AvatarFallback>
       </Avatar>
       
       <div className="flex-1 min-w-0 space-y-2">
         <div className="flex items-baseline gap-3">
-          <span className="font-semibold text-foreground text-base tracking-tight">
+          <span className="font-semibold text-foreground text-sm tracking-tight">
             {username}
           </span>
           <span className="text-xs text-muted-foreground font-mono">{timestamp}</span>
         </div>
         
-        <div className={`text-sm leading-relaxed p-4 rounded-xl border transition-all duration-200 ${
-          isGood 
-            ? 'bg-gradient-to-br from-emerald-950/30 to-emerald-900/20 border-emerald-700/30 text-emerald-50 shadow-lg shadow-emerald-900/10' 
-            : 'bg-gradient-to-br from-red-950/30 to-red-900/20 border-red-700/30 text-red-50 shadow-lg shadow-red-900/10'
-        }`}>
+        <div className="text-sm leading-relaxed p-3 rounded-xl bg-card/80 border border-border/30 text-foreground">
           {message}
         </div>
       </div>
@@ -63,26 +56,22 @@ const ChatExample = ({ badExample, goodExample }: ChatExampleProps) => {
         <div className="bg-gradient-to-r from-red-950/40 to-red-900/30 px-6 py-4 border-b border-red-700/20">
           <span className="text-sm font-bold text-red-300 tracking-wide">❌ Don't do this</span>
         </div>
-        <ChatMessage 
-          message={badExample} 
-          isGood={false} 
-          username="confused_user"
-          timestamp="Today at 2:30 PM"
-          avatarIndex={0}
-        />
+        <div className="space-y-0">
+          {badExample.map((msg, index) => (
+            <ChatMessageBubble key={index} {...msg} />
+          ))}
+        </div>
       </div>
       
       <div className="bg-gradient-to-br from-card to-card/80 border border-emerald-700/20 rounded-2xl overflow-hidden shadow-xl shadow-emerald-900/5 hover:shadow-2xl hover:shadow-emerald-900/10 transition-all duration-300 group">
         <div className="bg-gradient-to-r from-emerald-950/40 to-emerald-900/30 px-6 py-4 border-b border-emerald-700/20">
           <span className="text-sm font-bold text-emerald-300 tracking-wide">✅ Do this instead</span>
         </div>
-        <ChatMessage 
-          message={goodExample} 
-          isGood={true} 
-          username="clear_communicator"
-          timestamp="Today at 2:31 PM"
-          avatarIndex={1}
-        />
+        <div className="space-y-0">
+          {goodExample.map((msg, index) => (
+            <ChatMessageBubble key={index} {...msg} />
+          ))}
+        </div>
       </div>
     </div>
   );
