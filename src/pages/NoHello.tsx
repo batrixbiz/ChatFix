@@ -20,14 +20,15 @@ const NoHello = () => {
         <div className="space-y-16">
           <ChatExample
             badExample={[
-              { message: "Hello", username: "confused_user", timestamp: "2:30 PM", avatarIndex: 0 },
-              { message: "Is anyone there?", username: "confused_user", timestamp: "2:32 PM", avatarIndex: 0 },
-              { message: "Hi! What's up?", username: "helper", timestamp: "2:45 PM", avatarIndex: 1 },
-              { message: "I need help with something", username: "confused_user", timestamp: "2:46 PM", avatarIndex: 0 }
+              { message: "Hey", username: "confused_user", timestamp: "2:30 PM", avatarIndex: 0 },
+              { message: "Hello? Hello? @Owner @Admin @Moderator", username: "confused_user", timestamp: "2:32 PM", avatarIndex: 0 },
+              { message: "What do you want...", username: "helper", timestamp: "2:45 PM", avatarIndex: 1 },
+              { message: "I need help.", username: "confused_user", timestamp: "2:46 PM", avatarIndex: 0 }
+              { message: "JUST SAY THE PROBLEM!", username: "helper", timestamp: "2:45 PM", avatarIndex: 1 },
             ]}
             goodExample={[
-              { message: "Hi! I'm trying to reset my password but the email isn't coming through. I've checked my spam folder. Can someone help?", username: "clear_user", timestamp: "2:30 PM", avatarIndex: 2 },
-              { message: "Sure! Let me check your account. What email address are you using?", username: "helper", timestamp: "2:31 PM", avatarIndex: 1 }
+              { message: "Hey! I'm having trouble finding the right words for a project description. Can anyone review my draft?", username: "clear_user", timestamp: "2:30 PM", avatarIndex: 2 },
+              { message: "Sure! Share the draft and I’ll take a look.", username: "helper", timestamp: "2:31 PM", avatarIndex: 1 }
             ]}
           />
 
