@@ -26,7 +26,7 @@ const NoHello = () => {
               { message: "I need help...", username: "confused_user", timestamp: "2:46 PM", avatarIndex: 0 },
             ]}
             goodExample={[
-              { message: "Hey! I'm having trouble finding the right words for a project description. Can anyone review my draft?", username: "clear_user", timestamp: "2:30 PM", avatarIndex: 2 },
+              { message: "Hey! I'm having trouble finding the right words for a project description. Can anyone review my draft?", username: "clear_user", timestamp: "2:30 PM", avatarIndex: 0 },
               { message: "Sure! Share the draft and I’ll take a look.", username: "helper", timestamp: "2:31 PM", avatarIndex: 1 }
             ]}
           />
