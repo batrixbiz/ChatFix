@@ -13,10 +13,10 @@ interface ChatExampleProps {
 }
 
 const profilePics = [
-  "https://cdn.discordapp.com/avatars/1242134309305974886/fcd08a2910be319914e1bea2951a57a6.png?size=2048",
-  "https://cdn.discordapp.com/avatars/730524057241649212/5cefe793dc4f6307bc259b9d6c9d0694.png?size=2048",
-  "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/ae/25/77/ae25777e-eddf-937a-21c0-48a0d9ac6137/mza_220473596765865662.png/486x486bb.png",
-  "https://assets.teenvogue.com/photos/586fb5d4f77a0c673d72629f/1:1/w_2417,h_2417,c_limit/GettyImages-165443495.jpg"
+  "/nerd.jpg",
+  "/sigma.jpg",
+  "/chicolachowski.jpg",
+  "/adrianalima.jpg"
 ];
 
 const ChatMessageBubble = ({ message, username, timestamp, avatarIndex }: ChatMessage) => {
