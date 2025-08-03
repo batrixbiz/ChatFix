@@ -26,8 +26,8 @@ const XYProblem = () => {
               { message: "Hmm, what are you actually trying to do?", username: "helper", timestamp: "1:49 PM", avatarIndex: 1 }
             ]}
             goodExample={[
-              { message: "I'm trying to summarize sentences by showing only the ending. What's a good way to do that?", username: "clear_user", timestamp: "1:45 PM", avatarIndex: 0 },
-              { message: "Ah, got it. You could use a simple split method and clean the result after. That way punctuation won't interfere.", username: "helper", timestamp: "1:46 PM", avatarIndex: 1 }
+              { message: "I'm trying to summarize sentences by showing only the ending. What's a good way to do that?", username: "clear_user", timestamp: "1:45 PM", avatarIndex: 2 },
+              { message: "Ah, got it. You could use a simple split method and clean the result after. That way punctuation won't interfere.", username: "helper", timestamp: "1:46 PM", avatarIndex: 3 }
             ]}
           />
 
