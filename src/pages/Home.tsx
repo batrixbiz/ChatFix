@@ -73,7 +73,7 @@ const Home = () => {
                 <Link to={concept.link}>
                   <Button 
                     variant="outline" 
-                    className="w-full btn-modern group-hover:border-primary/50 group-hover:text-primary transition-all duration-200"
+                    className="w-full btn-modern"
                   >
                     Learn more
                   </Button>
